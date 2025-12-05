@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <title>Words Calculator</title>
+</head>
+<body>
+    <div class = "container">
+    <h1>Word Counter</h1>
+    <textarea id = "textBox" rows = "8" cols = "40" placeholder = "Type your text here..."></textarea>
+    <br><br>
+    <button onclick = "countWords()">Count Words</button>
+    <p> Total Words: <span id = "result">0</span></p>
+    </div>
+    <script>
+        function countWords() {
+            let text = document.getElementById("textBox").value;
+            let words = text.trim().split(/\s+/);
+            let wordCount = (text.trim() === "") ? 0 : words.length;
+            document.getElementById("result").innerText = wordCount;
+        }
+    </script>
+</body>
+</html>
