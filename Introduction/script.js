@@ -16,3 +16,9 @@ console.log("hello world");
 
 let a = prompt("Enter value of a:")
 console.log(Number(a)+10);
+
+
+// string - group of characters 
+let str1 = "hemalatha,"
+let str2 = "ganesan"
+console.log(str1 + " " + str2);
