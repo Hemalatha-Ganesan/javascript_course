@@ -123,3 +123,43 @@ if( age >= 18)
 else
     console.log("You cannot vote")
 console.log("Thank you")
+
+
+                //object
+
+
+let item = {
+    name: 'phone',
+    cost: 15000,
+    quantity : 1,
+    dimensions:{
+        length: 7,
+        breadth: 3.5,
+        height: 5
+    }
+}
+console.log(item)
+// another way to create object
+let item2 = new Object();
+item2.name = 'laptop',
+item2.cost = 52000,
+item2.quantity = 1
+console.log(item2)
+
+//accessing object
+//dot property
+console.log(item.name)
+item.cost = 20000
+console.log(item.cost)
+// adding new property
+item.returnable = true
+console.log(item)
+//square bracket notationn
+console.log(item['cost'])
+item['returnable'] = false
+let key = 'cost'
+item[key] = 30000
+console.log(item)
+
+
+

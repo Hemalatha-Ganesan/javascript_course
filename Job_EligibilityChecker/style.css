@@ -31,6 +31,14 @@ input {
     width: 250px;
     padding-left: 10px;
 }
+.row {
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+  gap: 15px;     /* Space between radio and text */
+  font-size: 20px;
+}
+
 
 input:active {
     border: none;
