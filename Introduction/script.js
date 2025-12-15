@@ -132,19 +132,23 @@ let item = {
     name: 'phone',
     cost: 15000,
     quantity : 1,
+    categories : ['electronics','mobile'],
     dimensions:{
         length: 7,
         breadth: 3.5,
         height: 5
     }
 }
+console.log(item.categories[1]);
 console.log(item)
+
 // another way to create object
 let item2 = new Object();
 item2.name = 'laptop',
 item2.cost = 52000,
 item2.quantity = 1
 console.log(item2)
+
 
 //accessing object
 //dot property
@@ -160,6 +164,22 @@ item['returnable'] = false
 let key = 'cost'
 item[key] = 30000
 console.log(item)
+
+
+item1 = {
+    name: "Modern Wear",
+    quantity: 1,
+    price: 2000,
+    buy: function(){
+        console.log('item added to cart')
+    },
+    addtoList(){
+       console.log('item added to wishlist')
+    }
+
+}
+item1.buy()
+item1.addtoList()
 
 
 

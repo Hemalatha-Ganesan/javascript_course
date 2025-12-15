@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Dropdown UI</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            background: #f2f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #wrapper {
+            background: white;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.1);
+            width: 320px;
+        }
+
+        h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 22px;
+        }
+
+        select, input {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        select:focus, input:focus {
+            border-color: #5a67d8;
+            box-shadow: 0 0 8px rgba(90, 103, 216, 0.3);
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: 600;
+            color: #444;
+            margin-top: 10px;
+            display: block;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="wrapper">
+        <h3>Select Department</h3>
+
+        <label>Department</label>
+        <select id="department"></select>
+
+        <label style="margin-top: 20px;">Enter Name</label>
+        <input type="text" id="username" placeholder="Enter your name">
+    </div>
+
+    <script>
+        // Array of departments
+        let arr = ['cse', 'ece', 'aids', 'aiml', 'eee'];
+
+        // Select the dropdown element
+        const dropdown = document.getElementById("department");
+
+        // Loop through the array and add each item as <option>
+        arr.forEach(item => {
+            let option = document.createElement("option");  
+            option.value = item;
+            option.textContent = item.toUpperCase();  
+            dropdown.appendChild(option);
+        });
+    </script>
+
+</body>
+</html>
