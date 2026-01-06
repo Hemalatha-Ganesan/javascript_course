@@ -1,6 +1,7 @@
 //The promise object represents the eventual completion (or failure) 
 // asynchronous operation
 
+
 const tatkalbook = new Promise((resolve,reject) => {
     let bookingSuccess = true
     if(bookingSuccess)
